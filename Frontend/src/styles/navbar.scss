@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 16px;
+  background: rgba(199, 49, 194, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  button {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    color: $subtext;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: $radius;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    
+
+    &:hover {
+      color: $primary;
+      background: rgba(129, 140, 248, 0.15);
+      box-shadow: 0 0 10px rgba(129, 140, 248, 0.3);
+    }
+  }
+}

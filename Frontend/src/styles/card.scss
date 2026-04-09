@@ -1,0 +1,50 @@
+.card {
+  background: $card-bg;
+  border-radius: $radius;
+  padding: 18px;
+  margin: 15px auto;
+  max-width: 520px;
+  border: 1px solid $border;
+  box-shadow: $shadow;
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 6px 0;
+    color: $subtext;
+    font-size: 14px;
+  }
+
+  button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: $radius;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+
+    &:first-of-type {
+      background: rgba(34, 211, 238, 0.15);
+      color: $accent;
+    }
+
+    &:last-of-type {
+      background: rgba(248, 113, 113, 0.15);
+      color: $danger;
+    }
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

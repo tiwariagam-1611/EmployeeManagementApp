@@ -1,0 +1,67 @@
+// 🔹 Reusable Input Style (GLOBAL)
+.input-field {
+  padding: 10px 12px;
+  border: 1px solid $border;
+  border-radius: $radius;
+  outline: none;
+  min-width: 160px;
+  font-size: 14px;
+  background: $surface;
+  color: $text;
+  transition: all 0.2s ease;
+
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.4);
+  }
+
+  &::placeholder {
+    color: $subtext;
+  }
+}
+
+// 🔹 Optional: make select match input perfectly
+.select-field {
+  @extend .input-field;
+  cursor: pointer;
+}
+
+// 🔹 Form Layout (ONLY layout, not styling inputs)
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+// 🔹 Button Style (Reusable)
+.btn-primary {
+  background: linear-gradient(135deg, $primary, $accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: $radius;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+  }
+}
+
+// 🔹 Optional: Secondary Button (Edit / Cancel)
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: $text;
+  border: 1px solid $border;
+  padding: 8px 14px;
+  border-radius: $radius;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(178, 19, 19, 0.1);
+  }
+}
